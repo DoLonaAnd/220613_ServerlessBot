@@ -11,8 +11,8 @@ const headers = {
 }
 
 const body:GlobalApplicationCommand = {
-    name: "omikuji",
-    description: "get omikuji",
+    name: "hoge",
+    description: "return hoge",
 }
 
 try {
