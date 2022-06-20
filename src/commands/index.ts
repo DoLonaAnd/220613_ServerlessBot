@@ -20,7 +20,7 @@ export function onApplicationCommand(interaction:ApplicationCommandInteraction){
       res = omikuji(interaction);
       break;
     
-    case "hoge":
+    case "dock":
       res = dock(interaction);
       break;
     
