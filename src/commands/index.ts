@@ -11,7 +11,7 @@ export function onApplicationCommand(interaction:ApplicationCommandInteraction){
   let res:InteractionResponse;
   
   switch(commandName){
-    case "ping":
+    case "pang":
       res = ping(interaction);
       break;
     
