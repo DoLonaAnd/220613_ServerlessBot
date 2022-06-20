@@ -2,7 +2,7 @@ import { ApplicationCommandInteraction, InteractionResponse } from "../../@types
 import { InteractionCallbackType } from "../../@types/types.ts"
 import { ping } from "./ping.ts"
 import { omikuji } from "./omikuji.ts"
-import { hoge } from "./hoge.ts"
+import { dock } from "./dock.ts"
 
 export function onApplicationCommand(interaction:ApplicationCommandInteraction){
   const data = interaction.data
@@ -21,7 +21,7 @@ export function onApplicationCommand(interaction:ApplicationCommandInteraction){
       break;
     
     case "hoge":
-      res = hoge(interaction);
+      res = dock(interaction);
       break;
     
     default:
