@@ -15,8 +15,8 @@ export function onApplicationCommand(interaction:ApplicationCommandInteraction){
       res = ping(interaction);
       break;
     
-    case "hoge":
-      res = hoge(interaction);
+    case "omikuji":
+      res = omikuji(interaction);
       break;
       
     default:
