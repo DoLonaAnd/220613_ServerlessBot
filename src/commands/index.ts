@@ -2,6 +2,7 @@ import { ApplicationCommandInteraction, InteractionResponse } from "../../@types
 import { InteractionCallbackType } from "../../@types/types.ts"
 import { ping } from "./ping.ts"
 import { omikuji } from "./omikuji.ts"
+import { hoge } from "./hoge.ts"
 
 export function onApplicationCommand(interaction:ApplicationCommandInteraction){
   const data = interaction.data
@@ -18,7 +19,11 @@ export function onApplicationCommand(interaction:ApplicationCommandInteraction){
     case "omikuji":
       res = omikuji(interaction);
       break;
-      
+    
+    case "hoge":
+      res = hoge(interaction);
+      break;
+    
     default:
       res = {
         type:InteractionCallbackType.CHANNEL_MESSAGE_WITH_SOURCE,
