@@ -20,7 +20,7 @@ export function omikuji(interaction:ApplicationCommandInteraction):InteractionRe
       // input at the top.
       type: InteractionCallbackType.CHANNEL_MESSAGE_WITH_SOURCE,
       data: {
-        content: `あなたの運勢は${array[num]}です。`,
+        content: `あなたの今日の運勢は${array[num]}です。`,
       }
     }
   return res;
