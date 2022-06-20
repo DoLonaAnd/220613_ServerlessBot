@@ -1,6 +1,7 @@
 import { ApplicationCommandInteraction, InteractionResponse } from "../../@types/index.d.ts"
 import { InteractionCallbackType } from "../../@types/types.ts"
 import { ping } from "./ping.ts"
+import { hoge } from "./hoge.ts"
 
 export function onApplicationCommand(interaction:ApplicationCommandInteraction){
   const data = interaction.data
@@ -12,6 +13,10 @@ export function onApplicationCommand(interaction:ApplicationCommandInteraction){
   switch(commandName){
     case "ping":
       res = ping(interaction);
+      break;
+    
+    case "hoge":
+      res = hoge(interaction);
       break;
       
     default:
