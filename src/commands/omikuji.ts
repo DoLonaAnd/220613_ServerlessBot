@@ -10,7 +10,7 @@ export function omikuji(interaction:ApplicationCommandInteraction):InteractionRe
   let array = ["大凶","凶","末吉","吉","小吉","中吉","大吉"];
 
   // 5以下の自然数を取得。
-  let num = Math.floor((Math.random() * (array.length - 1)));
+  let num = Math.floor((Math.random() * (array.length)));
 
 
 
