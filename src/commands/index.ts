@@ -1,7 +1,7 @@
 import { ApplicationCommandInteraction, InteractionResponse } from "../../@types/index.d.ts"
 import { InteractionCallbackType } from "../../@types/types.ts"
 import { ping } from "./ping.ts"
-import { hoge } from "./hoge.ts"
+import { omikuji } from "./omikuji.ts"
 
 export function onApplicationCommand(interaction:ApplicationCommandInteraction){
   const data = interaction.data
